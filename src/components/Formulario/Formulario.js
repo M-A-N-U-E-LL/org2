@@ -9,6 +9,7 @@ const Formulario = () => {
     const [nombre, actualizarNombre] = useState("");
     const [puesto, actualizarPuesto] = useState("");
     const [foto, actualizarFoto] = useState("");
+    const [equipo, actualizarEquipo] = useState("");
 
     const manejarEnvio = (e) => {
         e.preventDefault();
@@ -17,6 +18,7 @@ const Formulario = () => {
             nombre: nombre,
             puesto: puesto,
             foto: foto,
+            equipo: equipo,
         };
         console.log(datosAEnviar);
     }
@@ -42,7 +44,10 @@ const Formulario = () => {
                 required value={foto} 
                 actualizarValor={actualizarFoto} 
             />
-            <ListaOpciones />
+            <ListaOpciones 
+                valor={equipo}
+                actualizarEquipo={actualizarEquipo}
+            />
             <Boton>
                 Crear colaborador
             </Boton>
