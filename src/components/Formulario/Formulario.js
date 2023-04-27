@@ -11,16 +11,17 @@ const Formulario = (props) => {
     const [foto, actualizarFoto] = useState("");
     const [equipo, actualizarEquipo] = useState("");
 
+    const { registrarColaborador } = props;
+
     const manejarEnvio = (e) => {
         e.preventDefault();
-        console.log("Manejar envio", e);
         let datosAEnviar = {
             nombre: nombre,
             puesto: puesto,
             foto: foto,
             equipo: equipo,
         };
-        console.log(datosAEnviar);
+        registrarColaborador(datosAEnviar);
     }
 
     return <section className="formulario">

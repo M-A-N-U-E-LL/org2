@@ -5,11 +5,6 @@ const MiOrg = (props) => {
     // Estado - Hooks
     // UseState
     console.log(props);
-    // const [mostrar, actualizarMostrar] = useState(true);
-    // const manejarClick = () => {
-    //     console.log("Mostrar/Ocultar", !mostrar);
-    //     actualizarMostrar(!mostrar);
-    // }
 
     return <section className="orgSection">
         <h3>Mi organización</h3>
