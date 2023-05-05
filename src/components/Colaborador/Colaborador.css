@@ -41,8 +41,9 @@
     margin: 0;
 }
 
-.eliminar{
+.eliminar {
     position: absolute;
     right: -15px;
     top: -15px;
+    cursor: pointer;
 }
